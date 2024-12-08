@@ -1,0 +1,43 @@
+$ORIGIN ngo.us.
+$TTL 86400
+; SOA Records
+@		IN	SOA	ns2.afraid.org. admin.nic.ngo.us. YYYYMMDDNN 86400 10800 3600000 3600
+
+; ========== BEGIN REGISTRY SERVICES ==========
+
+; Delegation Records
+@		IN	NS	ns1.alstra.org.
+@		IN	NS	ns2.alstra.org.
+@		IN	NS	ns3.alstra.org.
+@		IN	NS	ns2.afraid.org.
+@		IN	NS	ns1.1984hosting.com.
+
+; NS Records
+client		IN	NS	paloma.ns.cloudflare.com.
+client		IN	NS	sergi.ns.cloudflare.com.
+nic	86400	IN	NS	paloma.ns.cloudflare.com.
+nic	86400	IN	NS	sergi.ns.cloudflare.com.
+
+; A Records
+@	3600	IN	A	3.5.130.81
+whois	60	IN	A	192.0.2.1
+
+; TXT Records
+_psl		IN	TXT	https://github.com/publicsuffix/list/pull/1821
+_whois._tcp	86400	IN	TXT	whois.ngo.us
+
+; Others
+_whois._tcp	3600	IN	SRV	0 0 43 whois.ngo.us.
+
+; ========== END REGISTRY SERVICES ============
+
+; ========== BEGIN ORGANIZATIONS ==============
+
+; Passion Story Church
+; Submitted by Kingsley <kce@tpsc.gleeze.com>
+passionstorychurch 86400 IN NS ns1.hostry.com.
+passionstorychurch 86400 IN NS ns2.hostry.com.
+passionstorychurch 86400 IN NS ns3.hostry.com.
+passionstorychurch 86400 IN NS ns4.hostry.com.
+
+; ========== END ORGANIZATIONS ================
